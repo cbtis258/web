@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ea">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>Maquetacion</title>
+</head>
+<body>
+    <header class="header">
+        <img src="6.PNG" height="80 alt="Logo de empresa" class="logo" >
+    </header>
+
+    <nav class="nav">
+        <ul class="barnav">
+            <li class="menu">Información</li>
+            <li class="menu">Cursos</li>
+            <li class="menu">Registro</li>
+            <li class="menu">Contacto</li>
+            <li class="menu">Servicios</li>
+        </ul>
+    </nav>
+
+    <section class="banner">
+        <h1 class="title-banner"><font color="#FFFFFF">"La creatividad no tiene límites".</h1></font>
+        <!-- Contenido de la página -->
+<div class="video-container">
+    <video id="myVideo" width="640" height="360" controls>
+      <source src="ROBÓTICA.mp4" type="video/mp4">
+      Tu navegador no soporta la etiqueta de video.
+    </video>
+    <br>
+    <label for="volumeControl">Volumen:</label>
+    <input type="range" id="volumeControl" min="0" max="50" step="0.1" value="1">
+  </div>
+
+        <a href="" class="btn-banner"><font color="#FFFFFF">Servicio educativo.</a></font>
+     <!-- Tabla de reparación -->
+    <table>
+        <caption>Información</caption>
+        <tr>
+            <th>Tipo de Servicio</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Cursos Lunes a Viernes</td>
+            <td>$300 - por quincena</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cursos Sabados y Domingos</td>
+            <td>$500 - por mensualidad</td>
+            <td></td>
+        </tr>
+    </table>
+    <font color="#FFFFFF">Para más información contactanos:| 81 28 89 23 56 | Telefono</h2></font>
+    <font color="#FFFFFF">Para más información contactanos:| DCI.cursos@gmail.com | Correo</h2></font>
+    <font color="#FFFFFF">Para más información contactanos:| DCIcursos | Instagram</h2></font>
+
+    </section>
+    <section class="article">
+        <h2 class="title-article"><font color="#FFFFFF">Bienvenidos a la pagina web de robótica| DCI</h2></font>
+        <p class="paragraph-article"><font color="#FFFFFF"> La página web es un blog y una comunidad educativa, donde se encuentra cursos & información de robótica. 
+        </p></font>
+        <div class="galery">
+            <div class="box-galery">
+                <div class="box-img">
+                    <img src="8.png" alt="Imagen" height="160"> 
+                </div>
+                <a href="#" class="btn-img">Mano robótica</a>
+            </div>
+            <div class="box-galery">
+                <div class="box-img">
+                    <img src="9.png" alt="Imagen" height="160">
+                </div>
+                <a href="#" class="btn-img">Robótica inteligente</a>
+            </div>
+            <div class="box-galery">
+                <div class="box-img">
+                    <img src="10.png" alt="Imagen" height="160">
+                </div>
+                <a href="#" class="btn-img">Revolución robótica</a>
+            </div>
+            <div class="box-galery">
+                <div class="box-img">
+                    <img src="11.png" alt="Imagen" height="160">
+                </div>
+                <a href="#" class="btn-img">Lo mejor de robótica</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+       <font color="#FFFFFF"><p class="text-footer">David Jaimes Ramirez</p></font>
+    </footer>
+</body>
+</html>
+
+<style>
+CODIGO DE CSS :0
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: Black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*Inicio de header*/
+.header{
+    width: 80%;
+    height: 4em;
+    background-color: rgb(0, 0, 128);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Inicio logo*/
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Inicio de nav*/
+.nav{
+    width: 80%;
+    height: 3em;
+    background-color: rgb(192, 192, 192);
+}
+.barnav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 20%;
+    height: 100%;
+    background-color: Navy;
+    color: aliceblue;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+/* Cambiar de color al poner el mouse encima */
+.menu:hover{
+    background-color: rgb(128, 128, 128);
+    color: rgb(35, 35, 35);
+    transition: 0.5s;
+}
+
+/*Inicio de banner*/
+.banner{
+    width: 80%;
+    height: calc(100vh - 7em);
+    background-color: rgb(192, 192, 192);
+    /*background-image: url(../img/banner.png);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-banner{
+    font-size: 3em;
+}
+.btn-banner{
+    background-color: Navy;
+    text-decoration: none;
+    padding: 1em 4em;
+    color: aliceblue;
+    font-size: 1.25;
+    margin: 1em 0;
+    border-radius: 0.5em;
+}
+
+/* Cambiar de color al poner el mouse encima */
+.btn-banner:hover{
+    background-color: rgb(128, 128, 128);
+    color: rgb(128, 128, 128);
+    transition: 0.5s;
+}
+
+/*Inicio de articulo quienes somos*/
+.article{
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-article{
+    font-size: 2em;
+}
+.paragraph-article{
+    font-size: 1.25em;
+    width: 80%;
+    text-align: justify;
+    margin: 2em ;
+}
+.galery{
+    width: 80%;
+    height: 40%;
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box-galery{
+    width: 24%;
+    height: 100%;
+    background-color: Navy;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box-img{
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-img img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-img{
+    background-color: Silver;
+    text-decoration: none;
+    padding: 0.5em 3em;
+    color: aliceblue;
+    font-size: 1em;
+    margin: 1em 0;
+    border-radius: 0.5em;
+}
+
+/*Inicio de footer*/
+.footer{
+    width: 80%;
+    height: 4em;
+    background-color: rgb(0, 0, 128);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.text-footer{
+    font-size: 1em;
+
+}
+
+</style>
